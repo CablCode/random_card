@@ -1,0 +1,46 @@
+body {
+    background-color: green;
+}
+
+.card {  
+  position: relative;
+  width: 105px;
+  height: 150px;
+  border-radius: 5px;
+  border: 2px solid black;
+  background-color: white;
+  
+}
+
+.card-value-suit {
+  display: inline-block;
+  position: absolute;
+}
+
+.card-suit {
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 25%;
+}
+
+.card-value-suit.top {
+  top: 5px;
+  left: 5px;
+}
+
+.card-value-suit.bottom {
+  transform: rotate(180deg);
+  bottom: 5px;
+  right: 5px;
+}
+
+
+.card.spades, .card.clubs {
+  color: black;
+}
+
+.card.hearts, .card.diamonds {
+  color: red;
+}
